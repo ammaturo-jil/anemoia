@@ -79,8 +79,10 @@
 
   <body>
     <h1>ANEMOIA</h1>
-    <p>Le parrain a laisse un chiffre sur la table : 15. Il ajoute dans un petit mot : ‘Le jour ou tout bascule.’ 
-    Combine le chiffre avec le mois d’Halloween pour trouver le mot-cle.’</p>
+    <p>Une note froissée est posée sur la table. On y lit :
+
+<p>“Dans chaque réunion, trois hommes parlent. L’un dit la vérité, l’autre ment, le dernier se tait.
+Le silence protège, le mensonge condamne, mais seule la vérité ouvre la porte.Qui choisis-tu de suivre ?”</p>
     <p>Entrez le mot de passe pour continuer l’aventure :</p>
 
     <input type="text" id="mdp" placeholder="Mot de passe">
@@ -89,7 +91,7 @@
     <script>
       function verifMdp() {
         let mdp = document.getElementById("mdp").value.trim();
-        if(mdp === "1510") {
+        if(mdp === "Vérité") {
           window.location.href = "https://ammaturo-jil.github.io/anemoia/indice2.html";
         } else {
           alert("Mot de passe incorrect, cherchez mieux…");
