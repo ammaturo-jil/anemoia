@@ -2,68 +2,72 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>A N E M O I A ARG</title>
+  <title>ANEMOIA ARG</title>
 
   <style>
+
     @font-face {
-      font-family: 'BeyondWonderland';
+      font-family: 'Beyond Wonderland';
       src: url('fonts/Beyond Wonderland.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
     }
 
+    @font-face {
+      font-family: 'Devil Inside';
+      src: url('fonts/Devil Inside.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
+      margin: 0;
+      padding: 0;
       background-color: #080004;
       background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-      background-repeat: repeat;
-      color: rgba(255,255,255,0.8);
-      font-family: Arial, sans-serif;
+      background-size: cover;
+      color: #f5f5f5;
       text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
     }
 
     h1 {
-      font-family: 'BeyondWonderland', sans-serif;
-      font-size: 100px;
-      letter-spacing: 20px;
-      color: rgba(255, 255, 0, 0.35);
-      text-shadow:
-        1px 1px 0 #00000020,
-        2px 2px 0 #00000015,
-        3px 3px 6px #FFD70040;
-      margin: 0;
+      font-family: 'Beyond Wonderland', serif;
+      font-size: 4em;
+      letter-spacing: 15px;
+      color: rgba(255, 255, 0, 0.25);
+      margin-bottom: 40px;
     }
 
-    .subtle {
-      font-size: 20px;
-      color: rgba(255, 255, 0, 0.15);
-      margin-top: 10px;
+
+    .subtitle {
+      font-family: 'Beyond Wonderland', serif;
+      font-size: 1em;
+      color: rgba(255, 255, 0, 0.1);
+      letter-spacing: 10px;
+      margin-bottom: 50px;
     }
 
-    .enigme {
-      margin-top: 50px;
-      font-size: 20px;
-      color: rgba(255, 255, 0, 0.15);
-      max-width: 600px;
+  
+    .texte {
+      font-family: 'Devil Inside', serif;
+      font-size: 1em;
+      color: rgba(255, 255, 255, 0.3);
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
-      line-height: 1.6;
-    }
-
-    .enigme p {
-      text-shadow: 1px 1px 2px #00000040;
+      letter-spacing: 2px;
+      line-height: 1.5em;
     }
   </style>
 </head>
+
 <body>
+  <h1>ANEMOIA</h1>
+  <div class="subtitle">ARG.</div>
 
-  <h1>A N E M O I A</h1>
-  <p class="subtle">A N E M O I A ARG.</p>
-
-  <div class="enigme">
-    <p>Indice : les lettres majuscules cachent le mot <strong>CLAVIS</strong>.</p>
-    <p>Essayez de taper <code>indice.html</code> à la fin du lien pour continuer…</p>
-  </div>
-
+  <p class="texte">Certains secrets ne s’offrent qu’aux yeux attentifs…</p>
+  <p class="texte">Indice : cherchez le mot <strong>CLAVIS</strong>.</p>
+  <p class="texte">(Essayez de taper <code>indice.html</code> à la fin du lien du site…)</p>
 </body>
 </html>
