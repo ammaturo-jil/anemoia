@@ -61,7 +61,11 @@
   <h1>ANEMOIA</h1>
   <div class="box">
     <p>« Les ombres veillent sur ceux qui osent. »</p>
-    <p> Le parrain a cache le message dans son bureau. Sur le bureau, il y a trois dossiers : ‘FAMILLE’, ‘TRAHISON’, ‘OMERTA’. Lequel contient le mot qui ouvrira la porte des Ombres ?.</p>
+    <p> Une salle richement décorée vous ouvre ses portes... Au fond de celle-ci : un banquet.
+       Vous arrivez à son niveau, devant trois verres.
+      a. La coupe d'argent : Elle appartient a ceux qui vivent dans l'ombre.
+      b. La coupe d'or : Elle appartient a ceux qui croient en la lumiere.
+      c. La coupe de plomb : Elle appartient a ceux qui n'ont rien à perdre.
     <p>Entrez le mot secret pour poursuivre l’aventure :</p>
     <input type="password" id="mdpInput" placeholder="Mot secret">
     <button onclick="checkMDP()">Entrer</button>
@@ -71,7 +75,7 @@
   <script>
     function checkMDP() {
       const input = document.getElementById('mdpInput').value.trim().toUpperCase();
-      const correct = 'OMERTA'; // ton mot secret
+      const correct = 'c'; // ton mot secret
       const error = document.getElementById('errorMsg');
       
       if(input === correct) {
