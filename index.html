@@ -1,70 +1,52 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>ANEMOIA</title>
-
-  <style>
-    /* Polices locales */
-    @font-face {
-      font-family: 'Who Asks Satan';
-      src: url('fonts/who asks satan.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'HelpMe';
-      src: url('fonts/HelpMe.ttf') format('truetype');
-    }
-
-    /* Styles globaux */
-    body {
-      background-color: #080004;
-      background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-      color: rgba(255,255,255,0.85);
-      font-family: 'HelpMe', sans-serif;
-      text-align: center;
-      padding: 60px;
-    }
-
-    /* Titre */
-    h1 {
-      font-family: 'Who Asks Satan', serif;
-      font-size: 5em;
-      color: #ffffff;
-      margin-bottom: 50px;
-    }
-
-    /* Texte normal */
-    p {
-      font-size: 1.4em;
-      line-height: 1.6em;
-      color: rgba(200,200,200,0.75);
-      max-width: 700px;
-      margin: 20px auto;
-    }
-
-    /* Mot clé en code */
-    code {
-      font-family: 'HelpMe', monospace;
-      background-color: rgba(255,255,255,0.1);
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: rgba(255,255,255,0.9);
-    }
-
-    /* Texte discret */
-    .small {
-      font-size: 0.9em;
-      color: rgba(255,255,255,0.4);
-      margin-top: 30px;
-    }
-  </style>
-</head>
-
-<body>
-  <h1>ANEMOIA</h1>
-
-  <p>Certains secrets ne s’offrent qu’aux yeux attentifs…</p>
-  <p>Indice : cherchez le mot <code>CLAVIS</code> pour avancer dans l’aventure.</p>
-  <p class="small">Tu souhaites plonger dans l'univers des Réunions De L'ombre ? Ajoute <code>indice.html</code> à l’URL, et peut-être sauras-tu trouver l'accès aux plus grands des secrets...</p>
-</body>
+<html>
+  <head>
+    <title>Indice — ANEMOIA</title>
+    <meta charset="UTF-8">
+    <style>
+      @font-face {
+        font-family: 'HelpMe';
+        src: url('fonts/HelpMe.ttf') format('truetype');
+      }
+      body {
+        background-color: #080004;
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+        color: rgba(220,220,220,0.85);
+        font-family: 'HelpMe', sans-serif;
+        text-align: center;
+        padding: 60px;
+      }
+      h1 {
+        font-family: 'Who asks Satan', serif;
+        font-size: 4em;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 1.3em;
+        line-height: 1.6em;
+        max-width: 700px;
+        margin: 20px auto;
+      }
+      .codeword {
+        font-family: monospace;
+        background: rgba(255,255,255,0.05);
+        padding: 3px 6px;
+        border-radius: 4px;
+        color: #ffff66; /* fait ressortir le mot CLAVIS */
+      }
+      .hint {
+        margin-top: 40px;
+        font-size: 1em;
+        color: rgba(255,255,102,0.6);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Indice</h1>
+    <p>“RZNV RH Z NVIR.”</p>
+    <p class="hint">Petit coup de pouce : chaque lettre a été <strong>décalée de 3</strong>. Si tu galères, note le mot secret <span class="codeword">CLAVIS</span> quelque part…</p>
+    <p class="hint">Ajoute <code>final.html</code> à l'URL pour poursuivre l'aventure.</p>
+  </body>
 </html>
