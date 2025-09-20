@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>ANEMOIA</title>
-<style>
-@font-face { font-family: 'Who asks Satan'; src: url('fonts/who asks satan.ttf') format('truetype'); }
-@font-face { font-family: 'HelpMe'; src: url('fonts/HelpMe.ttf') format('truetype'); }
-
-body {
-  background-color: #080004;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  color: rgba(200,200,200,0.85);
-  font-family: 'HelpMe', sans-serif;
-  text-align: center;
-  padding: 80px;
-}
-
-h1 {
-  font-family: 'Who asks Satan', serif;
-  font-size: 6em;
-  color: white;
-  margin-bottom: 50px;
-}
-
-input { padding:10px; font-size:1em; }
-button { padding:10px; font-size:1em; margin-left:10px; cursor:pointer; }
-</style>
+  <meta charset="UTF-8">
+  <title>ANEMOIA ARG</title>
+  <style>
+    @font-face {
+      font-family: 'WhoAsksSatan';
+      src: url('fonts/who asks satan.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'HelpMe';
+      src: url('fonts/HelpMe.ttf') format('truetype');
+    }
+    body {
+      background-color: #080004;
+      background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+      color: rgba(255,255,255,0.7);
+      font-family: 'HelpMe', sans-serif;
+      text-align: center;
+      padding: 80px;
+    }
+    h1 {
+      font-family: 'WhoAsksSatan', serif;
+      font-size: 80px;
+      color: rgba(255,255,255,1);
+      margin-bottom: 50px;
+    }
+    .box {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .mdp {
+      font-family: monospace;
+      background: rgba(255,255,255,0.1);
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
-<h1>ANEMOIA</h1>
-<p>Certains secrets ne s’offrent qu’aux yeux attentifs…</p>
-<p>Entrez le mot-clé pour continuer :</p>
-<input type="text" id="pass">
-<button onclick="checkPass()">Valider</button>
-
-<script>
-function checkPass() {
-  var pass = document.getElementById('pass').value.trim().toUpperCase();
-  if(pass === "CLAVIS") {
-    window.location.href = "indice.html"; // redirige vers la page indice
-  } else {
-    alert("Mot de passe incorrect…");
-  }
-}
-</script>
+  <h1>ANEMOIA</h1>
+  <div class="box">
+    <p>« Les ombres veillent sur ceux qui osent. »</p>
+    <p>Le Don a laissé un mot pour ses fidèles.</p>
+    <p>Message laissé par le Don :</p>
+    <p><em>“Vkrq fdw lqfrph wkh prw qhhghg. Brx vhh wkh vrph skudfkrqv…?”</em></p>
+    <p>Indice : <em>César a parlé → décale 3 lettres en arrière dans l'alphabet pour révéler le mot secret.</em></p>
+  
+  </div>
 </body>
 </html>
