@@ -2,67 +2,26 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>A N E M O I A ARG</title>
-
-  <!-- Polices -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400&display=swap" rel="stylesheet">
+  <title>ANEMOIA ARG</title>
 
   <style>
-    /* Fond sombre + texture */
+    /* Import de la police Beyond Wonderland depuis ton repo */
+    @font-face {
+      font-family: 'Beyond Wonderland';
+      src: url('fonts/beyond-wonderland.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
       padding: 0;
       background-color: #080004;
       background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-      background-repeat: repeat;
-      background-size: auto;
-      font-family: 'Cinzel Decorative', serif;
-      color: #f5f5dc;
+      font-family: 'Arial', sans-serif;
+      color: #f5f5f5;
       text-align: center;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+      fle
 
-    /* Titre principal */
-    h1 {
-      font-size: 4em;
-      letter-spacing: 12px;
-      color: rgba(255, 255, 0, 0.3); /* gris-jaune transparent */
-      margin: 0 0 20px 0;
-    }
-
-    /* Sous-titre discret */
-    .subtitle {
-      font-size: 1.2em;
-      color: rgba(255,255,255,0.1);
-      letter-spacing: 4px;
-      margin-bottom: 40px;
-    }
-
-    /* Boîte pour indices ou textes */
-    .box {
-      background: rgba(0,0,0,0.3);
-      padding: 25px 40px;
-      border-radius: 10px;
-      max-width: 700px;
-      box-shadow: 0 0 20px rgba(255,165,0,0.2);
-      font-size: 1.2em;
-      line-height: 1.6em;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>A N E M O I A</h1>
-  <div class="subtitle">ARG</div>
-
-  <div class="box">
-    <p>« Les secrets se trouvent dans les ombres… »</p>
-    <p>Indice : tapez <code>indice.html</code> pour continuer.</p>
-  </div>
-
-</body>
-</html>
