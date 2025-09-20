@@ -1,71 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>ANEMOIA</title>
+<meta charset="UTF-8">
+<title>ANEMOIA</title>
+<style>
+@font-face { font-family: 'Who asks Satan'; src: url('fonts/who asks satan.ttf') format('truetype'); }
+@font-face { font-family: 'HelpMe'; src: url('fonts/HelpMe.ttf') format('truetype'); }
 
-  <style>
-    /* Polices locales */
-    @font-face {
-      font-family: 'Who Asks Satan';
-      src: url('fonts/who asks satan.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'HelpMe';
-      src: url('fonts/HelpMe.ttf') format('truetype');
-    }
+body {
+  background-color: #080004;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  color: rgba(200,200,200,0.85);
+  font-family: 'HelpMe', sans-serif;
+  text-align: center;
+  padding: 80px;
+}
 
-    /* Styles globaux */
-    body {
-      background-color: #080004;
-      background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-      color: rgba(255,255,255,0.85);
-      font-family: 'HelpMe', sans-serif;
-      text-align: center;
-      padding: 60px;
-    }
+h1 {
+  font-family: 'Who asks Satan', serif;
+  font-size: 6em;
+  color: white;
+  margin-bottom: 50px;
+}
 
-    /* Titre */
-    h1 {
-      font-family: 'Who Asks Satan', serif;
-      font-size: 5em;
-      color: #ffffff;
-      margin-bottom: 50px;
-    }
-
-    /* Texte normal */
-    p {
-      font-size: 1.4em;
-      line-height: 1.6em;
-      color: rgba(200,200,200,0.75);
-      max-width: 700px;
-      margin: 20px auto;
-    }
-
-    /* Mot clé en code */
-    code {
-      font-family: 'HelpMe', monospace;
-      background-color: rgba(255,255,255,0.1);
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: rgba(255,255,255,0.9);
-    }
-
-    /* Texte discret */
-    .small {
-      font-size: 0.9em;
-      color: rgba(255,255,255,0.4);
-      margin-top: 30px;
-    }
-  </style>
+input { padding:10px; font-size:1em; }
+button { padding:10px; font-size:1em; margin-left:10px; cursor:pointer; }
+</style>
 </head>
-
 <body>
-  <h1>ANEMOIA</h1>
+<h1>ANEMOIA</h1>
+<p>Certains secrets ne s’offrent qu’aux yeux attentifs…</p>
+<p>Entrez le mot-clé pour continuer :</p>
+<input type="text" id="pass">
+<button onclick="checkPass()">Valider</button>
 
-  <p>Certains secrets ne s’offrent qu’aux yeux attentifs…</p>
-  <p> Tu souhaites rejoindre l'univers mystérieux des Réunions De L'ombre ?
-  <p>Indice : cherchez le mot <code>CLAVIS</code> pour avancer dans l’aventure.</p>
-  <p>Ajoute ce simple code à l’URL pour accéder à la prochaine étape de ce long périple...</p>
+<script>
+function checkPass() {
+  var pass = document.getElementById('pass').value.trim().toUpperCase();
+  if(pass === "CLAVIS") {
+    window.location.href = "indice.html"; // redirige vers la page indice
+  } else {
+    alert("Mot de passe incorrect…");
+  }
+}
+</script>
 </body>
 </html>
