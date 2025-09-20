@@ -17,7 +17,7 @@
       body {
         background-color: #080004;
         background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-        color: rgba(255, 255, 255, 0.85);
+        color: rgba(255, 255, 255, 0.7);
         font-family: 'HelpMe', sans-serif;
         text-align: center;
         padding: 60px;
@@ -45,6 +45,8 @@
         text-align: center;
         width: 200px;
         margin-top: 20px;
+        background-color: #0d0d0d;
+        color: #fff;
       }
 
       button {
@@ -53,13 +55,13 @@
         font-size: 1em;
         border-radius: 5px;
         border: none;
-        background-color: #ff7518;
-        color: #000;
+        background-color: #222; /* gris/noir */
+        color: #fff;
         cursor: pointer;
       }
 
       button:hover {
-        background-color: #ffb347;
+        background-color: #555;
       }
 
       .clavis {
@@ -77,9 +79,9 @@
 
   <body>
     <h1>ANEMOIA</h1>
-    <p>e parrain a laissé un chiffre sur la table : 15. Il ajoute dans un petit mot : ‘Le jour où tout bascule.’
-Combine le chiffre avec le mois d’Halloween pour trouver le mot-clé.’</p>
-    <p>Entrez le mot de passe pour continuer l’aventure. :</p>
+    <p>Le parrain a laissé un chiffre sur la table : 15. Il ajoute dans un petit mot : ‘Le jour ou tout bascule.’ 
+    Combine le chiffre avec le mois d’Halloween pour trouver le mot-cle.’</p>
+    <p>Entrez le mot de passe pour continuer l’aventure :</p>
 
     <input type="text" id="mdp" placeholder="Mot de passe">
     <button onclick="verifMdp()">Entrer</button>
