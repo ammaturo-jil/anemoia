@@ -75,19 +75,18 @@
     <button onclick="checkMDP()">Entrer</button>
     <p class="error" id="errorMsg">Mot secret incorrect, réessayez.</p>
   </div>
-
-  <script>
-    function checkMDP() {
-      const input = document.getElementById('mdpInput').value.trim().toUpperCase();
-      const correct = 'c'; 
-      const error = document.getElementById('errorMsg');
-      
-      if(input === correct) {
-        window.location.href = "https://ammaturo-jil.github.io/anemoia/indice.html";
-      } else {
-        error.style.display = 'block';
-      }
+<script>
+  function checkMDP() {
+    const input = document.getElementById('mdpInput').value.trim().toUpperCase();
+    const correct = 'C';  // on met en majuscule pour correspondre à .toUpperCase()
+    const error = document.getElementById('errorMsg');
+    
+    if(input === correct) {
+      window.location.href = "https://ammaturo-jil.github.io/anemoia/indice.html";
+    } else {
+      error.style.display = 'block';
     }
-  </script>
+  }
+</script>
 </body>
 </html>
