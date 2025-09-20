@@ -1,52 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Indice — ANEMOIA</title>
     <meta charset="UTF-8">
+    <title>Indice 1 — ANEMOIA</title>
+    <!-- Polices -->
     <style>
+      @font-face {
+        font-family: 'WhoAsksSatan';
+        src: url('fonts/Who Asks Satan.ttf') format('truetype');
+      }
       @font-face {
         font-family: 'HelpMe';
         src: url('fonts/HelpMe.ttf') format('truetype');
       }
+
       body {
         background-color: #080004;
         background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-        color: rgba(220,220,220,0.85);
+        color: rgba(255, 255, 255, 0.85);
         font-family: 'HelpMe', sans-serif;
         text-align: center;
         padding: 60px;
       }
+
       h1 {
-        font-family: 'Who asks Satan', serif;
+        font-family: 'WhoAsksSatan', serif;
         font-size: 4em;
-        color: #ffffff;
-        margin-bottom: 30px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 50px;
       }
+
       p {
-        font-size: 1.3em;
-        line-height: 1.6em;
+        font-size: 1.2em;
         max-width: 700px;
         margin: 20px auto;
+        line-height: 1.6em;
       }
-      .codeword {
-        font-family: monospace;
-        background: rgba(255,255,255,0.05);
-        padding: 3px 6px;
-        border-radius: 4px;
-        color: #ffff66; /* fait ressortir le mot CLAVIS */
-      }
-      .hint {
-        margin-top: 40px;
+
+      input[type=text] {
+        padding: 10px;
         font-size: 1em;
-        color: rgba(255,255,102,0.6);
-        font-style: italic;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        text-align: center;
+        width: 200px;
+        margin-top: 20px;
+      }
+
+      button {
+        margin-left: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: none;
+        background-color: #ff7518;
+        color: #000;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #ffb347;
+      }
+
+      .clavis {
+        font-family: 'HelpMe', sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #fff;
+        background-color: rgba(0,0,0,0.3);
+        padding: 2px 6px;
+        border-radius: 3px;
+        letter-spacing: 2px;
       }
     </style>
   </head>
+
   <body>
-    <h1>Indice</h1>
-    <p>“RZNV RH Z NVIR.”</p>
-    <p class="hint">Petit coup de pouce : chaque lettre a été <strong>décalée de 3</strong>. Si tu galères, note le mot secret <span class="codeword">CLAVIS</span> quelque part…</p>
-    <p class="hint">Ajoute <code>final.html</code> à l'URL pour poursuivre l'aventure.</p>
+    <h1>ANEMOIA</h1>
+    <p>e parrain a laissé un chiffre sur la table : 15. Il ajoute dans un petit mot : ‘Le jour où tout bascule.’
+Combine le chiffre avec le mois d’Halloween pour trouver le mot-clé.’</p>
+    <p>Entrez le mot de passe pour continuer l’aventure. :</p>
+
+    <input type="text" id="mdp" placeholder="Mot de passe">
+    <button onclick="verifMdp()">Entrer</button>
+
+    <script>
+      function verifMdp() {
+        let mdp = document.getElementById("mdp").value.trim();
+        if(mdp === "1510") {
+          window.location.href = "https://ammaturo-jil.github.io/anemoia/indice2.html";
+        } else {
+          alert("Mot de passe incorrect, cherchez mieux…");
+        }
+      }
+    </script>
   </body>
 </html>
