@@ -62,9 +62,7 @@
   <div class="box">
     <p>« Les ombres veillent sur ceux qui osent. »</p>
     <p>Le Don a laissé un mot pour ses fidèles.</p>
-    <p> Message laissé par le Don :</p>
-    <p>“Vkrq fdw lqfrph wkh prw qhhghg. Brx vhh wkh vrph skudfkrqv…?”</p>
-    <p>Indice : César a parlé → décale 3 lettres en arrière dans l'alphabet pour révéler le mot secret.
+    <p> Le parrain a caché le message dans son bureau. Sur le bureau, il y a trois dossiers : ‘FAMILLE’, ‘TRAHISON’, ‘OMERTÀ’. Lequel contient le mot qui ouvrira la porte des Ombres ?.</p>
     <p>Entrez le mot secret pour poursuivre l’aventure :</p>
     <input type="password" id="mdpInput" placeholder="Mot secret">
     <button onclick="checkMDP()">Entrer</button>
@@ -74,7 +72,7 @@
   <script>
     function checkMDP() {
       const input = document.getElementById('mdpInput').value.trim().toUpperCase();
-      const correct = 'SIGNA'; // ton mot secret
+      const correct = 'OMERTA'; // ton mot secret
       const error = document.getElementById('errorMsg');
       
       if(input === correct) {
